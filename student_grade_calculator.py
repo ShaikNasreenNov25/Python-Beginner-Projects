@@ -1,0 +1,80 @@
+def student_info():
+    name = input("Enter student name: ").upper()
+    clas = input("Enter class:")
+    rollnum = input("Enter roll number: ")
+
+    return name,clas,rollnum
+
+
+def student_marks():
+    n = int(input("\nEnter number of subjects: "))
+    subjects = {}
+
+    for i in range(1,n+1):
+        subject_name = input(f"Enter name of subject {i}:").upper()
+        marks = int(input(f"Enter marks for {subject_name}: "))
+        subjects[subject_name] = marks
+    return subjects
+
+
+def calculate_result(subjects):
+
+    total = sum(subjects.values())
+    max_marks = len(subjects)*100
+    percentage = (total/max_marks) * 100
+
+    if percentage >= 90:
+        grade = "A+"
+    elif percentage >= 80:
+        grade = "A"
+    elif percentage >= 70:
+        grade = "B"
+    elif percentage >= 60:
+        grade = "C"
+    elif percentage >= 50:
+        grade = "D"
+    elif percentage >= 40:
+        grade = "E"
+    else:
+        grade = "F"
+    
+    status ="PASS 🎉" if percentage >= 40 else "FAIL ❌"
+
+    return total,max_marks,percentage,grade,status
+
+
+def display_result(name,clas,rollnum,subjects,total,max_marks,grade,status,percentage):
+    print("\n================================")
+    print("  🎓    STUDENT  RESULTS    🎓  ")
+    print("=================================")
+    print("Name   :",name)
+    print("Class   :",clas)
+    print("Roll No :",rollnum)
+    print("=========Marks Summary==========")
+
+    for key,val in subjects.items():
+        print(f"{key} : {val}")
+    
+    print("----------------------------------")
+    print(f"Total    : {total} / {max_marks}")
+    print(f"Percentage : {(total/max_marks)*100}%")
+    print(f"Grade : {grade}")
+    print(f"Status : {status}")
+    print("==============================")
+
+    if percentage >= 40:
+        print(f"Congratulations {name}! 🎉")
+    else:
+        print(f"Keep trying {name}! 💪")
+
+
+def gradecalculator():
+    print("🙏Welcome to Student Grade Result System!\n")
+
+    name,clas,rollnum = student_info()
+    subjects = student_marks()
+
+    total,max_marks,percentage,grade,status = calculate_result(subjects)
+    display_result(name,clas,rollnum,subjects,total,max_marks,grade,status,percentage)
+
+gradecalculator()
