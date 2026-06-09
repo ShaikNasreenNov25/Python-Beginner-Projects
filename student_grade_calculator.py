@@ -1,6 +1,6 @@
 def student_info():
-    name = input("Enter student name: ").upper()
-    clas = input("Enter class:")
+    name = input("Enter student full name: ").upper()
+    clas = input("Enter class: ")
     rollnum = input("Enter roll number: ")
 
     return name,clas,rollnum
@@ -11,8 +11,23 @@ def student_marks():
     subjects = {}
 
     for i in range(1,n+1):
-        subject_name = input(f"Enter name of subject {i}:").upper()
-        marks = int(input(f"Enter marks for {subject_name}: "))
+        while True:
+            subject_name = input(f"Enter name of subject {i}:").upper()
+            if subject_name.isalpha() and len(subject_name) >= 5:
+                break
+            else:
+                print("Please enter a valid subject name (only letters, min 5 characters)")
+
+        while True:
+            try:
+                marks = int(input(f"Enter marks for {subject_name}: "))
+                if marks <= 0:
+                    print("Please enter valid marks greater than 0")
+                    continue
+                break
+            except ValueError:
+                print("Please enter marks in numbers only")
+      
         subjects[subject_name] = marks
     return subjects
 
@@ -69,7 +84,7 @@ def display_result(name,clas,rollnum,subjects,total,max_marks,grade,status,perce
 
 
 def gradecalculator():
-    print("🙏Welcome to Student Grade Result System!\n")
+    print("🙏 Welcome to Student Grade Result System!\n")
 
     name,clas,rollnum = student_info()
     subjects = student_marks()
