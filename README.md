@@ -10,9 +10,10 @@ This repository contains beginner-friendly Python projects created to practice a
 - Well-structured and easy-to-understand code
 
 ## 📑Table of Contents
-- [Project 1 - Number Guessing Game](#project-1---number-gussing-game)
-- [Project Structure](#project--structure)
-- [Technologies Used](#technologies--used)
+- [Project 1 - Number Guessing Game](#project-1---number-guessing-game)
+- [Project 2 - Student Grade Calculator](#project-2---student-grade-calculator)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
 - [How to Run the Code](#how-to-run-the-code)
 - [Author](#author)
 
@@ -68,6 +69,9 @@ Do you want to play again? (Yes/No): no
 
 Thanks for playing! Goodbye 👋
 ```
+## Project 2 - Student Grade Calculator
+
+A simple command line grade calculator
 
 ## Project Structure
 ```text
