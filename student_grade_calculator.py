@@ -1,6 +1,18 @@
 def student_info():
-    name = input("Enter student full name: ").upper()
-    clas = input("Enter class: ")
+    
+    while True:
+        name = input("Enter student full name: ").upper()
+        if len(name) >= 5:
+            break
+        else:
+            print("Please enter valid name that contains atleast 5 charaters")
+    while True:
+        try:
+            clas = int(input("Enter class: "))
+            break
+        except ValueError:
+            print("Please enter the class number in digits only.")
+
     rollnum = input("Enter roll number: ")
 
     return name,clas,rollnum
