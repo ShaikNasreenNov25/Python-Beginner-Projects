@@ -6,6 +6,7 @@ def student_info():
             break
         else:
             print("Please enter valid name that contains atleast 5 charaters")
+
     while True:
         try:
             clas = int(input("Enter class: "))
@@ -19,7 +20,17 @@ def student_info():
 
 
 def student_marks():
-    n = int(input("\nEnter number of subjects: "))
+
+    while True:
+        try:
+            n = int(input("\nEnter number of subjects: "))
+            if n < 5:
+                print("Please enter number of subjects at least 5")
+            else:
+                break
+        except ValueError:
+            print("Please enter only numbers!")
+       
     subjects = {}
 
     for i in range(1,n+1):
@@ -39,7 +50,7 @@ def student_marks():
                 break
             except ValueError:
                 print("Please enter marks in numbers only")
-      
+        print()
         subjects[subject_name] = marks
     return subjects
 
