@@ -11,7 +11,7 @@ This repository contains beginner-friendly Python projects created to practice a
 
 ## 📑Table of Contents
 - [Project 1 - Number Guessing Game](#project-1---number-guessing-game)
-- [Project 2 - Student Grade Calculator](#project-2---student-grade-calculator)
+- [Project 2 - 🎓 Student Grade Calculator](#project-2--🎓-student-grade-calculator)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [How to Run the Code](#how-to-run-the-code)
@@ -69,9 +69,10 @@ Do you want to play again? (Yes/No): no
 
 Thanks for playing! Goodbye 👋
 ```
-## Project 2 - Student Grade Calculator
+## Project 2 - 🎓 Student Grade Calculator
 
-A simple command line grade calculator
+A simple Python console application that collects student information, accepts subject marks,
+calculates the overall result, and displays the student's grade and pass/fail status.
 
 ## Project Structure
 ```text
