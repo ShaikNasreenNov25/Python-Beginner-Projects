@@ -44,8 +44,8 @@ def student_marks():
         while True:
             try:
                 marks = int(input(f"Enter marks for {subject_name}: "))
-                if marks <= 0:
-                    print("Please enter valid marks greater than 0")
+                if marks < 0 or marks > 100:
+                    print("Please enter valid marks between 0 and 100.")
                     continue
                 break
             except ValueError:
