@@ -1,7 +1,7 @@
 # Python Beginner Projects 🐍
 
 This repository contains beginner-friendly Python projects created to practice and improve core programming concepts.
--**Purpose:** To learn Python through hands-on projects and strengthen programming fundamentals.
+- **Purpose:** To learn Python through hands-on projects and strengthen programming fundamentals.
 
 ## Features
 - Beginner-friendly projects
