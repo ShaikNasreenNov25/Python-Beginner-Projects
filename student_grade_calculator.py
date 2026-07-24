@@ -10,7 +10,10 @@ def student_info():
     while True:
         try:
             clas = int(input("Enter class: "))
-            break
+            if 1 <= clas <= 10:
+                break
+            else:
+                print("Class must be between 1 and 10.")
         except ValueError:
             print("Please enter the class number in digits only.")
 
@@ -21,37 +24,23 @@ def student_info():
 
 def student_marks():
 
-    while True:
-        try:
-            n = int(input("\nEnter number of subjects: "))
-            if n < 5:
-                print("Please enter number of subjects at least 5")
-            else:
-                break
-        except ValueError:
-            print("Please enter only numbers!")
-       
+    subjects_list = ["ENGLISH","MATHEMATICS","SCIENCE","SOCIAL","HINDI","TELUGU"]
+
     subjects = {}
 
-    for i in range(1,n+1):
-        while True:
-            subject_name = input(f"Enter name of subject {i}:").upper()
-            if subject_name.isalpha() and len(subject_name) >= 5:
-                break
-            else:
-                print("Please enter a valid subject name (only letters, min 5 characters)")
-
+   
+    for subject in subjects_list:
         while True:
             try:
-                marks = int(input(f"Enter marks for {subject_name}: "))
-                if marks < 0 or marks > 100:
-                    print("Please enter valid marks between 0 and 100.")
-                    continue
-                break
+                marks = int(input(f"Enter the marks for {subject}: "))
+                if 0 <= marks <= 100:
+                    subjects[subject] = marks
+                    break
+                else:
+                    print("Marks must be between 0 and 100.")
             except ValueError:
-                print("Please enter marks in numbers only")
-        print()
-        subjects[subject_name] = marks
+                print("Please enter marks in number only.")
+       
     return subjects
 
 
