@@ -1,7 +1,7 @@
 # Python Beginner Projects 🐍
 
 This repository contains beginner-friendly Python projects created to practice and improve core programming concepts.
--**Purpose:** To learn Python through hands-on projects and strengthen programming fundamentals.
+- **Purpose:** To learn Python through hands-on projects and strengthen programming fundamentals.
 
 ## Features
 - Beginner-friendly projects
@@ -11,7 +11,7 @@ This repository contains beginner-friendly Python projects created to practice a
 
 ## 📑Table of Contents
 - [Project 1 - Number Guessing Game](#project-1---number-guessing-game)
-- [Project 2 - 🎓 Student Grade Calculator](#project-2--🎓-student-grade-calculator)
+- [Project 2 - Student Grade Calculator](#project-2---student-grade-calculator)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [How to Run the Code](#how-to-run-the-code)
@@ -69,10 +69,23 @@ Do you want to play again? (Yes/No): no
 
 Thanks for playing! Goodbye 👋
 ```
-## Project 2 - 🎓 Student Grade Calculator
+## Project 2 - Student Grade Calculator
 
 A simple Python console application that collects student information, accepts subject marks,
 calculates the overall result, and displays the student's grade and pass/fail status.
+
+## Features
+- Student information management
+- User input validation
+- Subject-wise marks entry
+- Dynamic subject count support
+- Marks validation (0–100)
+- Automatic total and percentage calculation
+- Grade assignment system
+- Pass/Fail status evaluation
+- Detailed result summary
+- Exception handling
+- Modular function-based design
 
 ## Project Structure
 ```text
