@@ -87,11 +87,69 @@ calculates the overall result, and displays the student's grade and pass/fail st
 - Exception handling
 - Modular function-based design
 
+## Concepts Used
+- Functions
+- Loops
+- Conditional Statements
+- Exception Handling
+- Lists
+- Dictionaries
+- String Manipulation
+- User Input Handling
+- Data Validation
+- Mathematical Operations
+- Return Values
+- Program Flow Control
+
+## Example:
+
+### Input
+```text
+Enter student full name: Rahul Kumar
+Enter class: 10
+Enter roll number: 101
+
+Enter the marks for ENGLISH: 90
+Enter the marks for MATHEMATICS: 95
+Enter the marks for SCIENCE: 85
+Enter the marks for SOCIAL: 88
+Enter the marks for HINDI: 92
+Enter the marks for TELUGU: 87
+```
+
+### Output
+```text
+================================
+  🎓    STUDENT  RESULTS    🎓
+=================================
+Name   : RAHUL KUMAR
+Class   : 10
+Roll No : 101
+=========Marks Summary==========
+
+ENGLISH : 90
+MATHEMATICS : 95
+SCIENCE : 85
+SOCIAL : 88
+HINDI : 92
+TELUGU : 87
+
+----------------------------------
+Total    : 537 / 600
+Percentage : 89.5%
+Grade : A
+Status : PASS 🎉
+==============================
+
+Congratulations RAHUL KUMAR! 🎉
+```
+
 ## Project Structure
 ```text
 Python_Beginner_Projects/
 │
 ├── guess_the_number.py
+├── student_grade_calculator.py
 └── README.md
 ```
 ## Technologies Used
@@ -116,6 +174,9 @@ cd Python-Beginner-Projects
 
 ```bash
 python guess_the_number.py
+```
+```bash
+python student_grade_system.py
 ```
 
 ## Author
